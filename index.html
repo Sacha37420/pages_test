@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation Anniversaire</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .invitation {
+            background: white;
+            max-width: 600px;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .invitation::before {
+            content: '🎉';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            font-size: 100px;
+            opacity: 0.1;
+            transform: rotate(-15deg);
+        }
+        
+        .invitation::after {
+            content: '🎂';
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            font-size: 100px;
+            opacity: 0.1;
+            transform: rotate(15deg);
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .destinataires {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .message {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+        
+        .details {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .details p {
+            font-size: 1.1em;
+            margin: 10px 0;
+            color: #333;
+        }
+        
+        .details strong {
+            color: #667eea;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border: 2px dashed #ffc107;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #856404;
+        }
+        
+        .emoji {
+            font-size: 1.5em;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation">
+        <h1>🎊 Invitation Spéciale 🎊</h1>
+        
+        <div class="destinataires">
+            À mes sœurs : Elodie et Fannie
+        </div>
+        <div class="destinataires">
+            À ma mère : Sabrina
+        </div>
+        
+        <div class="message">
+            Vous êtes cordialement invitées à célébrer mon anniversaire autour d'un bon moment ensemble !
+        </div>
+        
+        <div class="details">
+            <p><strong>📍 Lieu :</strong> Trois Brasseurs de Tours Nord</p>
+            <p><strong>🕘 Heure :</strong> 21h00</p>
+            <p><strong>🎉 Au programme :</strong> Bonne ambiance, rires et souvenirs !</p>
+        </div>
+        
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2703.864744228614!2d0.6917580999999999!3d47.4146389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fcd5db74b5d009%3A0xaab4471f9bb1424d!2sLes%203%20Brasseurs!5e0!3m2!1sfr!2sfr!4v1734455000000!5m2!1sfr!2sfr" width="100%" height="300" style="border:0; border-radius: 10px; margin-top: 20px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        <div class="note">
+            <span class="emoji">⚠️</span>
+            <strong>IMPORTANT :</strong> Cadeaux strictement interdits !
+            <span class="emoji">🚫</span>
+            <br>
+            Présence des invités obligatoire, et des chéris ou enfants fortement conseillée !
+        </div>
+    </div>
+</body>
+</html>
